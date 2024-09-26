@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Add the link tag for the favicon -->
+<link rel="shortcut icon" type="x-icon" href="./images/movie logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineVerse</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>  
+</head>
+<body>
+    <button class="menu-btn" id="menuBtn" onclick="toggleSlidingWindow()">&#9776; Menu</button>
+   
+    <div class="sliding-window">
+        <div class="menu-items">
+            <button onclick="goTo('Home')">Home</button>
+            <button onclick="goTo('About')">About</button>
+            <button onclick="goTo('Genre')">Genre</button>
+            <button onclick="goTo('Movies')">Movies</button>
+            <button onclick="goTo('Series')">Series</button>
+        </div>
+    </div>
+    <header id="logo" class="logo-container">
+        <img src="Images/cineverse.png" alt="CineVerse">
+    </header>
+    
+
+<div class="container">
+    <h1 id="upcoming">New <span style="color: #3498db;">and</span> Upcoming <span style="color: #9b59b6;">Movies</span></h1>
+    <h2>Check out the latest releases and what's coming soon!</h2>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for movies...">
+        <input type="submit" value="Search" onclick="searchMovies()">
+        <div class="search-results" id="searchResults"></div>
+    </div>
+    <div class="movies" id="movies"></div>
+
+    <div class="pagination" id="pagination">
+        <input type="text" id="pageNumber" placeholder="Page">
+        <input type="submit" value="Go">
+    </div>
+</div>
+
+</body>
+</html>
